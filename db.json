@@ -1,0 +1,75 @@
+{
+	"usecases": [
+		{
+			"id": "UC_4607",
+			"title": "Invalid codes in masterdata types",
+			"description": "All elements contains invalid master data types codes. Usually marked with --xx",
+			"tickets": [
+				"CLEV-4607",
+				"CLEV-4606"
+			],
+			"consultation": {
+				"patientId": "{{patientId}}",
+				"medicalStatus": "A--xx",
+				"diagnostic": {
+					"id": "DIAGNOSTIC-IBUI-10000989-EN",
+					"description": "abcÃ¨s de tendon",
+					"typeCodeDiagnostic": [
+						{
+							"type": "IBUI",
+							"code": "10000989"
+						}
+					],
+					"codesRelated": [
+						{
+							"type": "ICPC2",
+							"code": "L70"
+						},
+						{
+							"type": "ICD10",
+							"code": "M65.0"
+						}
+					]
+				},
+				"importance": "3--xx",
+				"certainty": "C--xx",
+				"startDate": "02/12/2020",
+				"endDate": "24/03/2021",
+				"approach": false,
+				"nature": "HCE",
+				"chronic": false,
+				"comment": "some",
+				"encounterId": "{{last_EncounterId}}",
+				"professional": {
+					"id": "1265536",
+					"userName": {
+						"name": [
+							"Van Pottelbergh"
+						],
+						"surname": "Herwig",
+						"prefix": [
+							"DR"
+						]
+					},
+					"specialty": {
+						"id": "59a083e6-9334-45c7-9287-ed5c3b9fefaf",
+						"code": "1110",
+						"description": "mÃ©decine gÃ©nÃ©rale",
+						"lang": "fr"
+					}
+				},
+				"subNature": null,
+				"relationShip": null,
+				"approaches": [],
+				"subHealthElements": [],
+				"details": [],
+				"active": true,
+				"language": "en",
+				"expectedStatus": {
+					"code": "WRONG-xxxx",
+					"description": "History"
+				}
+			}
+		}
+	]
+}
